@@ -1,8 +1,11 @@
 <html>
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
         <link rel="stylesheet" type="text/css" href="/style.css">
         
+
+
         <link
         rel="stylesheet"
         href="https://js.arcgis.com/4.13/esri/themes/light/main.css"
@@ -15,30 +18,29 @@
     </head>
 
     <body style="background-color: darkkhaki;">
-       
-
+        
         <h1> Random shit show</h1>
+       
         <p class="p2">
             <a href="/index.html"><button>home</button></a> 
            <a href="/logs.html"><button>list</button></a>
          </p>
-
+         <table><tr><td>
         <p> 
             latitude: <span id="latitude"></span>&deg;<br>
             longitude: <span id="longitude"></span>&deg;<br>
-            name: <input type="text" id="username"></input>
+            name: <input type="text" id="username"></input><br>
         <button id="submitLoc">submit</button></p>
+    </td><td> <p>test</p></td></tr></table>
+
+   
 
 <center>
     <div id="viewDiv"></div>
 </center>
             
 
-
-
-<script>
-</script>
-<script src="sketch.js"></script>
+ <script src="sketch.js"></script>
 <script src="map.js"></script>
     </body>
 </html>

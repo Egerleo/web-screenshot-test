@@ -10,20 +10,19 @@ getData();
                     const geo = document.createElement('div');
                     const date = document.createElement('div');
                     const image = document.createElement('img');
-                    const lineBreak = document.createElement('p');
+                    //const lineBreak = document.createElement('p');
 
                     username.textContent = `name: ${item.username}`;
                     geo.textContent = `${item.lat}°,${item.lon}°`;
                     const dateString = new Date(item.timestamp).toLocaleString();
                     date.textContent = dateString;
+                    //image.src = "/test.png" ; //`${item.image64}`
                     image.src = item.image64;
-                    image.alt = "screenshot wenn man ne cam hat";
+                    console.log("'" +item.image64 +"'");
+                    image.alt = "screenshot funzt leider ned";
 
-                    root.append(username, geo,date, image, lineBreak);
+                    root.append(username, geo,date, image); //, lineBreak
                     document.body.append(root);
-
-                    //function to draw the data on the map
-
 
 
                 }
