@@ -11,15 +11,17 @@ console.log(data);
                     const date = document.createElement('div');
                     const image = document.createElement('img');
                     const imageCanvas = document.createElement('img');
+                    const br = document.createElement("BR");
                     //const lineBreak = document.createElement('p');
 
                     username.textContent = `name: ${item.username}`;
                     geo.textContent = `${item.lat}°,${item.lon}°`;
                     const dateString = new Date(item.timestamp).toLocaleString();
                     date.textContent = dateString;
-                    //image.src = "/test.png" ; //`${item.image64}`
                     image.src = item.image64;
                     imageCanvas.src = item.canvas64;
+                    imageCanvas.style = "max-height:200px; max-widht:200px;"
+                    image.style = "max-height:200px; max-widht:200px;"
                     console.log(item.image64);
                     console.log(item.canvas64);
                     image.alt = "screenshot funzt leider ned";

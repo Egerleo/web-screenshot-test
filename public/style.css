@@ -1,6 +1,6 @@
 
 html {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #viewDiv {
@@ -19,5 +19,6 @@ p {
 
 
 h1 {
- background-color: grey
+ background-color: grey;
+ display: block ;
 }

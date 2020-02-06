@@ -1,11 +1,16 @@
 
 function setup(){
-   const canvasImage = createCanvas(200, 200);
-   // noCanvas();
+
+// canvas to draw on
+    const canvasImage = createCanvas(200, 200);
     background(100,0,0); // colour the canvas
-   const video = createCapture(VIDEO); 
-  // const canvas = createCapture(CANVAS);
-    //createCanvas(400, 400);
+// canvas for a simple logo
+    const logoCanvas = createCanvas(30,30);
+    background(100,0,0); // colour the canvas
+
+    
+    const video = createCapture(VIDEO); 
+
     const submitLoc = document.getElementById("submitLoc");
     submitLoc.addEventListener("click",() =>{
             var userNameInput = document.getElementById("username");
