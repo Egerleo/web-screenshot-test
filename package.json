@@ -11,5 +11,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "nedb": "^1.8.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egerleo/saveSelfieAppWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Egerleo/saveSelfieAppWeb/issues"
+  },
+  "homepage": "https://github.com/Egerleo/saveSelfieAppWeb#readme"
 }
