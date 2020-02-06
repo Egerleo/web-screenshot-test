@@ -4,7 +4,8 @@
   "description": "test server side app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "leo",
   "license": "ISC",
@@ -15,7 +16,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Egerleo/saveSelfieAppWeb.git"
+    "url": "git+https://github.com/Egerleo/web-screenshot-test.git"
   },
   "bugs": {
     "url": "https://github.com/Egerleo/saveSelfieAppWeb/issues"
