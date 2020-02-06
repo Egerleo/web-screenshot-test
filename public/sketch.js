@@ -1,9 +1,10 @@
 
 function setup(){
-    createCanvas(300, 300);
+   const canvasImage = createCanvas(200, 200);
    // noCanvas();
-           background(100,0,0); // colour the canvas
+    background(100,0,0); // colour the canvas
    const video = createCapture(VIDEO); 
+  // const canvas = createCapture(CANVAS);
     //createCanvas(400, 400);
     const submitLoc = document.getElementById("submitLoc");
     submitLoc.addEventListener("click",() =>{
@@ -22,8 +23,13 @@ function setup(){
                             document.getElementById('longitude'). textContent = lon;
                             const username = userNameInput.value;
                             video.loadPixels();
+                            canvasImage.loadPixels();
                             const image64 = video.canvas.toDataURL();
-                            const data = { lat, lon, username,image64 }; //, image64
+                            const canvas64 = canvasImage.canvas.toDataURL();
+                            
+                            console.log(image64);
+                            console.log(canvas64);
+                            const data = { lat, lon, username,image64, canvas64}; //, image64, image64canvas
                             const options = {
                                 method: 'POST',
                                 headers: {
