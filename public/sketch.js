@@ -1,3 +1,4 @@
+const x = 0;
 function setup(){
 
     noCanvas();

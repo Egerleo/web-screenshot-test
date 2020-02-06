@@ -5,6 +5,7 @@ getData();
 
                 for (item of data){
                     const root = document.createElement('div');
+                    root.style = "background-color:white";
                     const username = document.createElement('div');
                     const geo = document.createElement('div');
                     const date = document.createElement('div');
@@ -21,9 +22,12 @@ getData();
                     root.append(username, geo,date, image, lineBreak);
                     document.body.append(root);
 
+                    //function to draw the data on the map
+
 
 
                 }
-                console.log(data);
+
             }
             fetch("/api");
+

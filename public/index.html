@@ -2,26 +2,43 @@
     <head>
         <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        
+        <link
+        rel="stylesheet"
+        href="https://js.arcgis.com/4.13/esri/themes/light/main.css"
+      />
+      <script src="https://js.arcgis.com/4.14/"></script>
         <title>
             server side
         </title>
         
     </head>
 
-    <body>
-        <script>console.log("test script");</script>
+    <body style="background-color: darkkhaki;">
+       
 
-        <h1> Data Selfie app</h1>
-        <p> <a href="/index.html">home</a> 
-            <a href="/logs.html">list</a> <br>
+        <h1> Random shit show</h1>
+        <p class="p2">
+            <a href="/index.html"><button>home</button></a> 
+           <a href="/logs.html"><button>list</button></a>
+         </p>
+
+        <p> 
             latitude: <span id="latitude"></span>&deg;<br>
             longitude: <span id="longitude"></span>&deg;<br>
             name: <input type="text" id="username"></input>
         <button id="submitLoc">submit</button></p>
 
+<center>
+    <div id="viewDiv"></div>
+</center>
+            
+
+
 
 <script>
 </script>
 <script src="sketch.js"></script>
+<script src="map.js"></script>
     </body>
 </html>

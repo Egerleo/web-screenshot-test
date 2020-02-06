@@ -1,4 +1,23 @@
+
+html {
+    font-size: 30px;
+}
+
+#viewDiv {
+    padding: 0;
+    margin:0;
+    height:50%;
+    width: 100%
+}
+
 p {
-    padding:10px;
-    background-color:#FFAAFF;
+    width:100%;
+    background-color: grey;
+    padding-bottom: 30px;
+
+}
+
+
+h1 {
+ background-color: white
 }
